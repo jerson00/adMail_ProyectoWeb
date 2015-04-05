@@ -48,9 +48,18 @@ class User extends CI_Controller {
 		$apellidos = $_POST['apellidos'];
 		$correo = $_POST['correo'];
 		$contrasena = $_POST['contrasena'];
-		$encriptada=md5($contrasena);
-		$this->load->model('User_model', 'user');
-		$this->user->insert($nombre,$apellidos,$correo,$encriptada);
-		redirect(base_url("user/login"), "refresh");
+		$confirm_contrasena = $_POST['confirm_contrasena'];
+		$correo_alternativo = $_POST['correo_alternativo'];
+		$verificada = 'N';
+		if($confirm_contrasena===$contrasena){
+			$encriptada=md5($contrasena);
+			$this->load->model('User_model', 'user');
+			$this->user->insert($nombre,$apellidos,$correo,$encriptada,$correo_alternativo,$verificada);
+			redirect(base_url("user/login"), "refresh");
+		}else
+		{
+			echo "<script type=\"text/javascript\">history.go(-1);</script>";
+			//redirect(base_url("user/register"), "refresh");
+		}
 	}
 }

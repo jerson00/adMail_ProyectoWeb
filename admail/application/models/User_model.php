@@ -5,11 +5,14 @@ class User_model extends CI_Model {
     parent::__construct();
   }
  
-  public function insert($nombre, $apellidos, $correo, $contrasena) {
+  public function insert($nombre, $apellidos, $correo, $contrasena,$correo_alternativo,$verificada) {
+      
       $this->db->set('nombre', $nombre);
       $this->db->set('apellidos', $apellidos);
       $this->db->set('correo', $correo);
       $this->db->set('contrasena', $contrasena);
+      $this->db->set('correo_alternativo', $correo_alternativo);
+      $this->db->set('verificada', $verificada);
       $this->db->insert('tbl_user');
   }
 

@@ -16,6 +16,10 @@
       <div class="page-header">
          <h1><img src="/admail/img/mail.png"></h1>
       </div>
+      <div class="alerta">
+        <div class="alert alert-success">Datos registrados correctamente</div>
+        
+      </div>
       <div class="page-header">
         <h4 id="title-log">Digite su información personal</h4>
         <div class="input-group" id="form-log">
@@ -39,7 +43,11 @@
         </div>
         <div class="input-group" id="form-log">
           <span class="input-group-addon" id="basic-addon1"><img src="/admail/img/pass-gray.png";></span>
-          <input type="password" class="form-control" placeholder="Confirmar Contraseña" name="confirm contrasena">
+          <input type="password" class="form-control" placeholder="Confirmar Contraseña" name="confirm_contrasena">
+        </div>
+        <div class="input-group" id="form-log">
+          <span class="input-group-addon" id="basic-addon1"><img src="/admail/img/arroba.png";></span>
+          <input type="email" class="form-control" placeholder="Correo alternativo" name="correo_alternativo">
         </div>
       </div>
       <input type="submit" class="btn btn-primary" id="btn-log" action="user/insert" value="Guardar"></input>
