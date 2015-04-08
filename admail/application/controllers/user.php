@@ -10,12 +10,18 @@ class User extends CI_Controller {
 
 	public function index()
 	{
+		$data['title'] = 'Login -- Admail';
+		$this->load->view('template/header',$data);
 		$this->load->view('user/login');
+		$this->load->view('template/footer');
 	}
 
 	public function register()
 	{
+		$data['title'] = 'Registro -- Admail';
+		$this->load->view('template/header',$data);
 		$this->load->view('user/register');
+		$this->load->view('template/footer');
 	}
 
 	public function home()

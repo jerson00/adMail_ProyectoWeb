@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <title>Login - adMail</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html;">
-    <link href="/admail/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="/admail/bootstrap/css/proyect.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="/admail/img/mail2.ico" type="image/png" />
-  </head>
-
   <body>
   <form class="formulario" method="POST" action="<?php echo site_url('user/authenticate'); ?>">
     <div class="container-fluid" id="log-div">
@@ -31,6 +19,3 @@
         </a>
     </div>
     </form>
-
-  </body>
-</html>

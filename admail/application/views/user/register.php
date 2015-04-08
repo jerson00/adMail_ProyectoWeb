@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Registrarse - adMail</title>
-
-    <link href="/admail/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/admail/bootstrap/css/proyect.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/admail/img/mail2.ico" type="image/png" />
-
-  </head>
   <body>
     <form id="reg-div" method="POST" action="<?php echo site_url('user/insert'); ?>">
       <div class="page-header">
@@ -52,5 +39,3 @@
       </div>
       <input type="submit" class="btn btn-primary" id="btn-log" action="user/insert" value="Guardar"></input>
     </form>
-  </body>
-</html>

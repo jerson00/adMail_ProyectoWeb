@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "user";
 $route['user/login'] = "user";
 $route['user/register'] = "user/register";
 $route['user/insert'] = "user/insert";
