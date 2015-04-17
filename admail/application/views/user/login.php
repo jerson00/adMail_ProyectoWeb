@@ -13,7 +13,6 @@
         <form class="ingresar" method="POST" action="<?php echo site_url('user/authenticate'); ?>">
           <input type="submit" class="btn btn-primary" id="btn-log" value="Entrar"></input>
         </form>
-        
         <a href="http://localhost/admail/user/register" target="_self">
           <button type="button" class="btn btn-success" id="btn-log"><strong>Registrarse</strong></button>
         </a>

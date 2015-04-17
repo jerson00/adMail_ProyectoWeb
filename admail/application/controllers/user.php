@@ -26,7 +26,18 @@ class User extends CI_Controller {
 
 	public function home()
 	{
+		$data['title'] = 'Home -- Admail';
+		$this->load->view('template/header',$data);
 		$this->load->view('user/home');
+		$this->load->view('template/footer');
+	}
+
+	public function new_msg()
+	{
+		$data['title'] = 'Nuevo Msj -- Admail';
+		$this->load->view('template/header',$data);
+		$this->load->view('user/new_msg');
+		$this->load->view('template/footer');
 	}
 
 	public function select() 

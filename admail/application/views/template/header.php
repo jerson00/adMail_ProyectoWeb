@@ -8,4 +8,5 @@
     <link href="/admail/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="/admail/bootstrap/css/proyect.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="/admail/img/mail2.ico" type="image/png" />
+    <script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
   </head>

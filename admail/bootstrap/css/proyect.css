@@ -33,3 +33,165 @@ html {
 #btn-log{
   margin: 10px 10px 30px 10px;
 }
+#footer{
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#user{
+  background: url(/admail/img/user-blackmin.png) no-repeat;
+  border-top: 5px solid white;
+  width: 54px;
+  height: 54px;
+}
+#user:hover{
+  background: url(/admail/img/user-bluemin.png) no-repeat;
+  border-top: 5px solid white;
+  width: 54px;
+  height: 54px;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+#user{
+  list-style-image: 
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  width: auto;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 58px;
+  width: 100%;
+}
+#menu-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: #009ae1;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu > ul > li > a {
+  padding: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000000;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+#cssmenu > ul > li.active > a {
+  color: #009ae1;
+}
+#cssmenu > ul > li > a > img{
+  vertical-align: middle;
+}
+}
+#body-page #barmenu{
+  float: left;
+  height: 100%;
+}
+#barmenu{
+  float: left;
+  list-style: none;
+  width: 26%;
+  height: 1000px;
+  background: #2580a2;
+}
+#barmenu ul{
+  margin: 58px 0px 0px 0px;
+  padding-left: 0px;
+  height: 100%;
+}
+#barmenu li {
+  font: 85% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  list-style: none;
+  
+}
+#barmenu a {
+  background: #2580a2;
+  border-bottom: 1px solid #393939;
+  color: #ccc;
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+#barmenu a:hover {
+  background: #009ae1;
+}
+#list-mail{
+  float: left;
+}
+ul#list-mail {
+   list-style: none;
+   background-color: #E6E6FA;
+   margin-top: 58px;
+   padding: 0px;
+   width: 74%;
+}
+ul#list-mail li {
+   font: small/1.3em Verdana, Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   padding: 3px 10px 5px 20px;
+   border-bottom: 1px solid #ccc;
+   color: #666;
+}
+ul#list-mail li:hover {
+   color: #000;
+   background-color: #ddd;
+}
+#send-to{
+  float: left;
+  margin-top: 58px;
+  width: 350px;/*width: 26%;*/
+  height: 600px;
+  background-color: #2580a2;
+}
+#txt_area{
+  float: left;
+  padding-top: 7%;
+  padding-left: 5%;
+  padding-right: 22.2%;
+  padding-bottom: 19%;
+  background-color: #ddd;
+}
+#send-to > div > .form-control{
+  width: 275px;
+  margin-bottom: 10px;
+}
+#send-to > div{
+  margin: 35px;
+}
