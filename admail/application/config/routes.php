@@ -43,7 +43,10 @@ $route['user/login'] = "user";
 $route['user/register'] = "user/register";
 $route['user/insert'] = "user/insert";
 $route['user/home'] = "user/home";
+$route['user/verificar'] = "user/vistaVerificar";
+$route['user/verificacion'] = "user/verificar";
 $route['user/authenticate'] = "user/authenticate";
+$route['email/enviar'] = "email/enviar";
 $route['404_override'] = '';
 
 
