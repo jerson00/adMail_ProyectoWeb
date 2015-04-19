@@ -22,18 +22,51 @@
       <div id="body-page">
          <div id="barmenu">
            <ul>
-              <li><a href='#'>ENVIADOS (#)</a></li>
-              <li><a href='#'>BANDEJA DE SALIDA (#)</a></li>
+              <li><a href='#'>
+                <button class="btn btn-primary" type="button"> Enviados 
+                  <span class="badge">4</span>
+                </button>
+              </a></li>
+              <li><a href='#'>
+                <button class="btn btn-primary" type="button"> Bandeja de Salida 
+                  <span class="badge">12</span>
+                </button>
+              </a></li>
            </ul>
       </div>
-      <div id="list">
-         <ul id="list-mail">
-            <li>Aqui se cargan los...</li>
-            <li>Correos que querem...</li>
-            <li>Mostrar desde la b...</li>
-            <li>De datos con un scr...</li>
-         </ul>
-      </div>
+      <fieldset>
+        <legend>ENVIADOS:</legend>
+        <div id="list"><!-- action="user/recuperarDatos" -->
+          <table>
+            <?php
+              $query = $this->db->query("SELECT * FROM tbl_user");
+              echo "<table class=\"table table-hover\">"; /*border=1 cellpadding=4 cellspacing=0*/
+                 echo "<tr>
+                     <th> Tabla usuarios </th>
+                   <tr>
+                     <th> id </th><th> nombre </th><th> apellidos </th>
+                     <th> correo </th><th> contrasena </th><th> correo_alternativo </th>
+                     <th> verificada </th><th> codigo_confirmacion </th>
+                  </tr>";
+              foreach ($query->result() as $row)
+              {
+
+                 echo "<tr>" 
+                         ."<td>".$row->id."</td>" 
+                         ."<td>".$row->nombre."</td>" 
+                         ."<td>".$row->apellidos."</td>" 
+                         ."<td>".$row->correo."</td>" 
+                         ."<td>".$row->contrasena."</td>"
+                         ."<td>".$row->correo_alternativo."</td>"
+                         ."<td>".$row->verificada."</td>"
+                         ."<td>".$row->codigo_confirmacion."</td>"
+                         ."</tr>"; 
+              }
+              echo "</table>";
+            ?>
+          </table>
+        </div>
+      </fieldset>
     </div>
   </body>
 </html>

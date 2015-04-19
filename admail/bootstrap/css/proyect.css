@@ -99,9 +99,6 @@ html {
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-#cssmenu > ul > li {
-  float: left;
-}
 #cssmenu > ul > li > a {
   padding: 20px;
   font-size: 14px;
@@ -121,11 +118,9 @@ html {
 }
 }
 #body-page #barmenu{
-  float: left;
   height: 100%;
 }
 #barmenu{
-  float: left;
   list-style: none;
   width: 26%;
   height: 1000px;
@@ -152,8 +147,8 @@ html {
 #barmenu a:hover {
   background: #009ae1;
 }
-#list-mail{
-  float: left;
+#list{
+  height: 607px;
 }
 ul#list-mail {
    list-style: none;
@@ -173,15 +168,16 @@ ul#list-mail li:hover {
    color: #000;
    background-color: #ddd;
 }
-#send-to{
+#new, #list-mail, #send-to, #txt_area, #barmenu, #body-page #barmenu, #cssmenu > ul > li{
   float: left;
+}
+#send-to{
   margin-top: 58px;
   width: 350px;/*width: 26%;*/
   height: 600px;
   background-color: #2580a2;
 }
 #txt_area{
-  float: left;
   padding-top: 7%;
   padding-left: 5%;
   padding-right: 22.2%;
